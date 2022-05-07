@@ -86,13 +86,13 @@ skip:   jsr delay_0_5sec
         
   butten2pressed:                       ; Decrement i with 16
         ldd i                           
-        subb #16
+        addd #-16
         std i
         bra skip 
         
   butten3pressed:                       ; Decrement i with 10
         ldd i                           
-        subd #10
+        addd #-10
         std i
         bra skip
 
